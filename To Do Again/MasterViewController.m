@@ -131,7 +131,6 @@
         default:
             break;
     }
-
 }
 
 #pragma mark - Fetched results controller
@@ -200,9 +199,13 @@
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
-    [self loadView];
+    //[self loadView];
     [self.tableView reloadData];
     [self.tableView endUpdates];
+}
+
+- (IBAction)unwindToMaster:(UIStoryboardSegue *)segue {
+    
 }
 
 @end

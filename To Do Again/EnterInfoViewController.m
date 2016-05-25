@@ -10,6 +10,7 @@
 #import "ToDo.h"
 @import CoreData;
 #import "AppDelegate.h"
+#import "DetailViewController.h"
 
 
 @interface EnterInfoViewController ()
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIStepper *enterPriorityStepper;
 @property (nonatomic) NSManagedObjectContext *context;
 @property (nonatomic, weak) AppDelegate *delegate;
+@property (nonatomic, weak) ToDo *toDo;
 
 @end
 
@@ -35,32 +37,29 @@
     self.enterPriorityLabel.text = displayPriority;
 }
 
-/*
- NSManagedObjectContext *context = <#Get the context#>;
- <#Managed Object Class#> *newObject = [NSEntityDescription
- insertNewObjectForEntityForName:@"<#Entity name#>"
- inManagedObjectContext:context];
- */
-
 - (IBAction)addItem:(id)sender {
         
-    ToDo *toDo = [NSEntityDescription insertNewObjectForEntityForName:@"ToDo" inManagedObjectContext:self.context];
+    self.toDo = [NSEntityDescription insertNewObjectForEntityForName:@"ToDo" inManagedObjectContext:self.context];
     
-    toDo.title = self.enterTitleLabel.text;
-    toDo.details = self.enterDetailsLabel.text;
-    toDo.priority = (int)self.enterPriorityStepper.value;
+    self.toDo.title = self.enterTitleLabel.text;
+    self.toDo.details = self.enterDetailsLabel.text;
+    self.toDo.priority = (int)self.enterPriorityStepper.value;
     [self.delegate saveContext];
     
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"newDetails"]) {
+        DetailViewController *controller = (DetailViewController *)[segue destinationViewController];
+        [controller setDetailItem:self.toDo];
+
+    }
 }
-*/
+
 
 @end

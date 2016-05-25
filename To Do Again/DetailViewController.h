@@ -16,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *detailTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailPriorityLabel;
 
+- (void)setDetailItem:(ToDo*)toDoItem;
+
 @end
 

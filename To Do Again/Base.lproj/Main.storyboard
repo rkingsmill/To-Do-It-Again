@@ -55,6 +55,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7f-tg-WeM">
                                 <rect key="frame" x="281.5" y="421" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="DKH-eO-LJ7" kind="unwind" unwindAction="unwindToMaster:" id="qQu-P4-DeA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -79,8 +82,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+                <exit id="DKH-eO-LJ7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="709" y="129"/>
+            <point key="canvasLocation" x="875" y="145"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -208,7 +212,7 @@
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addItem:" destination="nXk-cD-sK9" eventType="touchUpInside" id="Tkg-pi-VAM"/>
-                                    <segue destination="vC3-pB-5Vb" kind="show" identifier="newDetails" id="x7L-Hb-jVq"/>
+                                    <segue destination="JEX-9P-axG" kind="show" identifier="newDetails" id="33w-hC-0FA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,6 +258,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="x7L-Hb-jVq"/>
+        <segue reference="6S0-TO-JiA"/>
+        <segue reference="33w-hC-0FA"/>
     </inferredMetricsTieBreakers>
 </document>
