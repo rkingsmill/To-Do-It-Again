@@ -16,9 +16,9 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+- (void)setDetailItem:(ToDo*)toDoItem {
+    if (_toDoItem != toDoItem) {
+        _toDoItem = toDoItem;
             
         // Update the view.
         [self configureView];
@@ -27,8 +27,11 @@
 
 - (void)configureView {
     // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+    if (self.toDoItem) {
+        self.detailDescriptionLabel.text = [[self.toDoItem valueForKey:@"details"] description];
+        self.detailTitleLabel.text = self.toDoItem.title;
+        NSString *text = [NSString stringWithFormat:@"%d", self.toDoItem.priority];
+        self.detailPriorityLabel.text = text;
     }
 }
 

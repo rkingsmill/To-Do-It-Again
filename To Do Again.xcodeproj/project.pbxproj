@@ -15,6 +15,9 @@
 		5B3C14DB1CF5FB5C004018FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3C14D91CF5FB5C004018FB /* Main.storyboard */; };
 		5B3C14DD1CF5FB5C004018FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3C14DC1CF5FB5C004018FB /* Assets.xcassets */; };
 		5B3C14E01CF5FB5C004018FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3C14DE1CF5FB5C004018FB /* LaunchScreen.storyboard */; };
+		5B3C14EB1CF5FDF4004018FB /* ToDo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C14E81CF5FDF4004018FB /* ToDo+CoreDataProperties.m */; };
+		5B3C14EC1CF5FDF4004018FB /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C14EA1CF5FDF4004018FB /* ToDo.m */; };
+		5B3C14EF1CF61608004018FB /* EnterInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C14EE1CF61608004018FB /* EnterInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,12 @@
 		5B3C14DC1CF5FB5C004018FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3C14DF1CF5FB5C004018FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3C14E11CF5FB5C004018FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B3C14E71CF5FDF4004018FB /* ToDo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ToDo+CoreDataProperties.h"; path = "../ToDo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5B3C14E81CF5FDF4004018FB /* ToDo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ToDo+CoreDataProperties.m"; path = "../ToDo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5B3C14E91CF5FDF4004018FB /* ToDo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToDo.h; path = ../ToDo.h; sourceTree = "<group>"; };
+		5B3C14EA1CF5FDF4004018FB /* ToDo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToDo.m; path = ../ToDo.m; sourceTree = "<group>"; };
+		5B3C14ED1CF61608004018FB /* EnterInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterInfoViewController.h; sourceTree = "<group>"; };
+		5B3C14EE1CF61608004018FB /* EnterInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,12 @@
 				5B3C14D41CF5FB5C004018FB /* MasterViewController.m */,
 				5B3C14D61CF5FB5C004018FB /* DetailViewController.h */,
 				5B3C14D71CF5FB5C004018FB /* DetailViewController.m */,
+				5B3C14E71CF5FDF4004018FB /* ToDo+CoreDataProperties.h */,
+				5B3C14E81CF5FDF4004018FB /* ToDo+CoreDataProperties.m */,
+				5B3C14E91CF5FDF4004018FB /* ToDo.h */,
+				5B3C14EA1CF5FDF4004018FB /* ToDo.m */,
+				5B3C14ED1CF61608004018FB /* EnterInfoViewController.h */,
+				5B3C14EE1CF61608004018FB /* EnterInfoViewController.m */,
 				5B3C14D91CF5FB5C004018FB /* Main.storyboard */,
 				5B3C14DC1CF5FB5C004018FB /* Assets.xcassets */,
 				5B3C14DE1CF5FB5C004018FB /* LaunchScreen.storyboard */,
@@ -157,9 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3C14EC1CF5FDF4004018FB /* ToDo.m in Sources */,
 				5B3C14D81CF5FB5C004018FB /* DetailViewController.m in Sources */,
 				5B3C14D51CF5FB5C004018FB /* MasterViewController.m in Sources */,
 				5B3C14D21CF5FB5C004018FB /* To_Do_Again.xcdatamodeld in Sources */,
+				5B3C14EB1CF5FDF4004018FB /* ToDo+CoreDataProperties.m in Sources */,
+				5B3C14EF1CF61608004018FB /* EnterInfoViewController.m in Sources */,
 				5B3C14CF1CF5FB5C004018FB /* AppDelegate.m in Sources */,
 				5B3C14CC1CF5FB5C004018FB /* main.m in Sources */,
 			);
