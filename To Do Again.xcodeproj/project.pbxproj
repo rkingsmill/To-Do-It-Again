@@ -18,6 +18,7 @@
 		5B3C14EB1CF5FDF4004018FB /* ToDo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C14E81CF5FDF4004018FB /* ToDo+CoreDataProperties.m */; };
 		5B3C14EC1CF5FDF4004018FB /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C14EA1CF5FDF4004018FB /* ToDo.m */; };
 		5B3C14EF1CF61608004018FB /* EnterInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C14EE1CF61608004018FB /* EnterInfoViewController.m */; };
+		5B3C14F21CF671F0004018FB /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C14F11CF671F0004018FB /* TaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		5B3C14EA1CF5FDF4004018FB /* ToDo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToDo.m; path = ../ToDo.m; sourceTree = "<group>"; };
 		5B3C14ED1CF61608004018FB /* EnterInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterInfoViewController.h; sourceTree = "<group>"; };
 		5B3C14EE1CF61608004018FB /* EnterInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterInfoViewController.m; sourceTree = "<group>"; };
+		5B3C14F01CF671F0004018FB /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		5B3C14F11CF671F0004018FB /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				5B3C14ED1CF61608004018FB /* EnterInfoViewController.h */,
 				5B3C14EE1CF61608004018FB /* EnterInfoViewController.m */,
 				5B3C14D91CF5FB5C004018FB /* Main.storyboard */,
+				5B3C14F01CF671F0004018FB /* TaskViewController.h */,
+				5B3C14F11CF671F0004018FB /* TaskViewController.m */,
 				5B3C14DC1CF5FB5C004018FB /* Assets.xcassets */,
 				5B3C14DE1CF5FB5C004018FB /* LaunchScreen.storyboard */,
 				5B3C14E11CF5FB5C004018FB /* Info.plist */,
@@ -176,6 +181,7 @@
 				5B3C14D81CF5FB5C004018FB /* DetailViewController.m in Sources */,
 				5B3C14D51CF5FB5C004018FB /* MasterViewController.m in Sources */,
 				5B3C14D21CF5FB5C004018FB /* To_Do_Again.xcdatamodeld in Sources */,
+				5B3C14F21CF671F0004018FB /* TaskViewController.m in Sources */,
 				5B3C14EB1CF5FDF4004018FB /* ToDo+CoreDataProperties.m in Sources */,
 				5B3C14EF1CF61608004018FB /* EnterInfoViewController.m in Sources */,
 				5B3C14CF1CF5FB5C004018FB /* AppDelegate.m in Sources */,
